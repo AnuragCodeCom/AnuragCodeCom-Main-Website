@@ -85,7 +85,7 @@ main{
 }
 .main {
   display: flexbox;
-  background: linear-gradient(rgb(0, 0, 0),rgba(255, 255, 255, 0)) ,url(/images/IMAGE.png);
+  background: linear-gradient(rgb(0, 0, 0),rgba(255, 255, 255, 0)) ,url(images/IMAGE.png);
   background-blend-mode: multiply;
   height: 500px;
   width: 1333px;
