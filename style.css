@@ -52,7 +52,7 @@ nav .nav-title a {
 }
 
 nav .nav-links a:hover {
-  color: white;
+  background: linear-gradient(to right, #f27121, #d864d4);
 }
 
 nav .nav-links .active {
@@ -169,14 +169,14 @@ main{
   background: linear-gradient(rgba(4, 16, 37, 0.658), rgb(33, 33, 43));
   height: 320px;
   width: 300px;
-  border: 1px solid rgb(199, 132, 132);
+  border: 1px solid linear-gradient(rgba(4, 16, 37, 0.658), rgb(33, 33, 43));
   border-radius: 0.8em;
-  transition: 600ms;
+  transition: 280ms;
 }
 
 .main-projectcontent div:hover{
   transform: scale(1.06);
-  box-shadow: 0 3px 10px rgb(199, 132, 132);
+  box-shadow: 0 5px 20px rgb(0, 0, 0),0 1px 10px rgb(67, 67, 87);
 }
 
 
