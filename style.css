@@ -52,7 +52,7 @@ nav .nav-title a {
 }
 
 nav .nav-links a:hover {
-  background: linear-gradient(to right, #f27121, #d864d4);
+  color: white;
 }
 
 nav .nav-links .active {
