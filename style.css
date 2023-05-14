@@ -1,6 +1,6 @@
 body {
-  background-color: rgb(33, 33, 43);
-  color: rgba(255, 255, 255, 0.678);
+  background-color: #07070A;
+  color: #07070A;
 
   font-family: "Rubik", sans-serif;
   letter-spacing: 1px;
@@ -9,8 +9,7 @@ nav {
   display: flex;
   justify-content: space-between;
   font-family: "Rubik", sans-serif;
-  align-items: center;
-  border-bottom: 1px solid rgb(47, 47, 63);
+  text-align: center;
 }
 span {
   display: inline-block;
@@ -22,42 +21,40 @@ span {
   font-weight: 100;
 }
 
-nav div img {
-  border: 2px solid black;
-  border-radius: 50%;
-  margin: 0px 12px;
+nav a {
+  border:1px solid transparent;
+  display: inline-block;
+  border-radius: 0.1em;
+  margin: 12px 5px;
+  padding: 12px 30px;
+  color: white;
+  font-size: 32px;
+  transition: 200ms;
+  border-radius: 5em;
 }
 
-nav .nav-links a {
-  font-size: 22px;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.678);
-  padding: 0px 1px;
-  margin: 0px 20px;
-  transition: 100ms;
+nav div{
+  border-left: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid white;
+  border-radius: 1.5em;
+  position: relative;
+}
+
+.transition-nav a:hover{
+  color: #0d1b2a;
+  background: #45caff;
+    transform: scale(1.1);
 }
 
 nav a ion-icon {
   align-items: center;
   text-align: center;
-  padding: 0;
-  margin: 0;
 }
 
-nav .nav-title a {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.678);
-  padding: 0px 1px;
-  transition: 100ms;
-}
 
-nav .nav-links a:hover {
-  color: white;
-}
-
-nav .nav-links .active {
-  border-bottom: 2px solid yellow;
-  color: rgb(255, 255, 255);
+nav .mid-nav a:hover {
+  background: #45caff;
+  transform: scale(1.1);
 }
 
 main{
@@ -85,10 +82,11 @@ main{
 }
 .main {
   display: flexbox;
-  background: linear-gradient(rgb(0, 0, 0),rgba(255, 255, 255, 0)) ,url(images/IMAGE.png);
+  background: linear-gradient(rgb(0, 0, 0),#07070aab) ,url(images/IMAGE.png);
+  background-size: cover;
   background-blend-mode: multiply;
   height: 500px;
-  width: 1333px;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Rubik", sans-serif;
@@ -114,6 +112,11 @@ main{
 .main p a {
   text-decoration: none;
   color: rgb(241, 124, 124);
+}
+
+@media screen and (min-width: 300px) {
+  .main-content{
+  }
 }
 
 #divide-main-section{
@@ -143,12 +146,12 @@ main{
   align-items: center;
   text-decoration: none;
   text-align: center;
-  color: rgba(255, 255, 255, 0.678);
+  color: rgb(0, 0, 0);
   font-size: 22px;
 }
 
 .main-projectcontent a:hover {
-  color: white;
+  color: rgba(0, 0, 0, 0.568);
 }
 
 .main-projectcontent .icon {
@@ -157,7 +160,7 @@ main{
 }
 
 .main-projectcontent .icon:hover {
-  color: white;
+  color: rgba(0, 0, 0, 0.568);
 }
 .main-projectcontent {
   display: flex;
@@ -166,7 +169,7 @@ main{
 
 /* projects css */
 .main-projectcontent div {
-  background: linear-gradient(rgba(4, 16, 37, 0.658), rgb(33, 33, 43));
+  background: linear-gradient(#ff1b6b, #45caff);
   height: 320px;
   width: 300px;
   border: 1px solid linear-gradient(rgba(4, 16, 37, 0.658), rgb(33, 33, 43));
@@ -176,7 +179,7 @@ main{
 
 .main-projectcontent div:hover{
   transform: scale(1.06);
-  box-shadow: 0 5px 20px rgb(0, 0, 0),0 1px 10px rgb(67, 67, 87);
+  box-shadow: 0 0px 20px #45caff,0 1px 10px rgb(67, 67, 87);
 }
 
 
