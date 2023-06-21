@@ -1,0 +1,446 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+    height: 100%;
+    background: linear-gradient(176deg, rgba(18,24,27,1) 50%, rgba(32,39,55,1) 100%);
+    color: rgb(255, 255, 255);
+}
+a{
+  text-decoration: none;
+}
+*{
+    font-family: 'Abel', sans-serif;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    width: 100%;
+}
+
+.mode-changer{
+  border: none;
+}
+
+/* .sticky {
+    position: fixed;
+    width: 100%;
+  } */
+
+body{
+    background: linear-gradient(176deg, rgba(18,24,27,1) 50%, rgba(32,39,55,1) 100%);
+    background-attachment: fixed;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.nav-links{
+    background: transparent;
+    font-size: 6.3vh;
+    color: white;
+    padding: 1vh 3vh;
+}
+
+.settings{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+ .nav-center , .nav-right{
+    display: flexbox;
+    margin-top: 0;
+    padding-top: 0;
+    align-items: center;
+    justify-content: space-between;
+    transition: 100ms;
+    color: white;
+}
+
+.pro-link{
+  display: flexbox;
+  align-items: center;
+}
+
+.pro-link-text{
+  display: flexbox;
+  font-size: 22px;
+  background-color: transparent;
+  border: 1px solid gold;
+  padding: 3px 12px;
+  transition: 300ms;
+  background: linear-gradient(to right, #f32170,#ff6b08, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.pro-link-text:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  text-shadow: 0px 0px 0.00001px orange,0 0.001px .001px rgb(255, 187, 0);
+  box-shadow: 0px 0px 15px orange,0 1px 2px rgb(255, 187, 0);
+  border-radius: 0.2em;
+}
+
+
+.main-title{
+  font-weight: 100;
+  font-size: 40px;
+  background: linear-gradient(to right, #f32170,#ff6b08, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.main-title,.second-title,.catch-title{
+    padding: 5px;
+    font-weight: 100;
+    margin: 0;
+    
+}
+
+.projects-title{
+  border-left: 10px solid rgb(245, 219, 135);
+  padding-left: 25px;
+}
+
+.main-title-div{
+    font-size: 7vh;
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+.main-title{
+    justify-content: center;
+    transition: 100ms;
+    color: rgb(255, 255, 255);
+    font-family: 'Lexend Deca', sans-serif;
+  }
+/* 
+  .main-title:hover{
+    text-shadow: 0 0px 5px rgb(255, 255, 255),0 1px 2px rgb(67, 67, 87);
+  } */
+
+@keyframes second-title-glow{
+  from {}
+  to {text-shadow: 0 0px 10px rgb(236 72 153),0 1px 2px rgb(67, 67, 87);}
+}
+.second-title{
+  color: rgb(236 72 153);
+  letter-spacing: 0.1px;
+  word-spacing: 0.1px;
+  -webkit-animation: second-title-glow 3s infinite 10s;
+  animation: second-title-glow 3s infinite 10s;
+}
+/* .second-title:hover{
+  text-shadow: 0 0px 5px rgb(236 72 153),0 1px 2px rgb(67, 67, 87);
+} */
+
+@keyframes catch-title-glow{
+  from{}
+  to{ text-shadow: 0 0px 10px rgb(255, 166, 0),0 1px 2px rgb(67, 67, 87);}
+}
+.catch-title{
+    color: orange;
+    text-align: right;
+    -webkit-animation: catch-title-glow 3s infinite 2s;
+    animation: catch-title-glow 3s infinite 2s;
+}
+/* .catch-title:hover{
+  text-shadow: 0 0px 5px rgb(255, 166, 0),0 1px 2px rgb(67, 67, 87);
+} */
+
+  .typed-out {
+    overflow: hidden;
+    border-right: .15em solid transparent;
+    font-size: 1.6rem;
+    width: 0;
+  }
+.main-content{
+  display: block;
+}
+  .container {
+    display: block;
+  }
+
+  @keyframes typing {
+    from { width: 0 ;}
+    to { width: 100% ; letter-spacing: 10px;}
+  }
+
+  .typed-out{
+    overflow: hidden;
+    border-right: .15em solid transparent;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    width: 0;
+    animation: typing 3s forwards;
+  }
+  @keyframes blink {
+    from { border-color: transparent}
+    to { border-color: white; }
+  }
+  .typed-out{
+    overflow: hidden;
+    border-right: .15em solid transparent;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    width: 0;
+    animation: 
+      typing 100s steps(200) forwards,
+  }
+  .main-title-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+.api-link:hover{
+  color:lightsalmon;
+}
+
+.hosting-link:hover{
+    color: yellow;
+}
+
+.domain-link:hover{
+    color: aquamarine;
+}
+
+.home-link:hover{
+    color:springgreen;
+}
+
+.projects-link:hover{
+    color:blueviolet;
+}
+
+.settings-link:hover{
+    color:slategrey;
+}
+.store-link:hover{
+  color: gold;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .main-content-divider{
+    width: 10%;
+    align-items: center;
+    margin-bottom: 50px;
+    background-color: white;
+    border: 1px solid white;
+  }
+
+.main-content{
+  display: flexbox;
+  align-items: center;
+  font-size: 22px;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-content .question , .content-title{
+  color: rgb(255, 166, 0);
+  text-shadow: 0 0px 5px rgb(255, 166, 0),0 1px 2px rgb(67, 67, 87);
+  margin-top: 20px;
+}
+
+.content-subhedings{
+  color: #cf23cf;
+
+}
+
+.main-content a{
+  color: rgb(211, 88, 211);
+  text-decoration: none;
+  text-shadow: 0 0px 2px rgb(236 72 153),0 1px 1px rgb(67, 67, 87);
+  transition: 100ms;
+}
+
+.footer-content-divider{
+  margin-top: 200px;
+}
+
+footer{
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+}
+
+.footer-links{
+  font-size: 32px;
+  padding: 5px 10px;
+}
+
+.footer-link:hover{
+  color: grey ;
+}
+
+footer a{
+  color: white;
+  font-size: 22px;
+}
+.github-link:hover{
+  color:darkgray;
+}
+.instagram-link:hover{
+  color: rgb(211, 88, 211);
+}
+.discord-link:hover{
+  color: rgb(46, 46, 158);
+}
+.reddit-link:hover{
+  color: orange;
+}
+
+
+
+
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-flex;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  display: flex;
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #cf23cf;
+  
+  -webkit-transition: 100ms;
+  transition: 100ms;
+}
+
+input:checked + .slider {
+  background-color: transparent;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px transparent;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+
+
+
+.main-projectcontent {
+  overflow: hidden;
+  display: inline-block;
+  /* background-color: rgba(50, 49, 70, 0.753); */
+
+  padding: 25px;
+  margin: 50px;
+  text-align: center;
+}
+.main-projectcontent h2 {
+  font-size: 22px;
+}
+.main-projectcontent a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+}
+
+.main-projectcontent a:hover {
+  color: rgba(0, 0, 0, 0.568);
+}
+
+.main-projectcontent .icon {
+  font-size: 40px;
+  padding: 0px 12px;
+}
+
+.main-projectcontent .icon:hover {
+  color: rgba(0, 0, 0, 0.568);
+}
+.main-projectcontent {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+/* projects css */
+.main-projectcontent div {
+  background: linear-gradient(rgb(211, 88, 211) 85%, rgba(211, 88, 211, 0.733));
+  box-shadow: 0 0px 10px rgb(211, 88, 211),0 1px 2px rgb(67, 67, 87);
+  height: 320px;
+  width: 300px;
+  border: 1px solid linear-gradient(rgba(4, 16, 37, 0.658), rgb(33, 33, 43));
+  border-radius: 0.8em;
+  transition: 280ms;
+}
+
+
+.main-projectcontent .premium{
+  display: inline;
+  background: linear-gradient(gold 85%, rgba(255, 217, 0, 0.87));
+  box-shadow: 0 0px 10px gold,0 1px 2px gold;
+  padding: 0;
+  margin: 0;
+}
+
+
+.main-projectcontent div:hover{
+  transform: scale(1.06);
+  text-shadow: 0 0px 1px rgb(0, 0, 0),0 1px 2px rgb(67, 67, 87);;
+  box-shadow: 0 0px 10px rgb(211, 88, 211),0 1px 2px rgb(67, 67, 87);
+  color: black;
+}

@@ -1,121 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <link rel="stylesheet" href="/style.css">
+
+    <!-- Scripts And Style Sheets -->
+    <link rel="stylesheet" href="/css/dark-index.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js" type="text/javascript"></script>
+    
     <!-- ---------------------Favicon--------------- -->
     <link rel="icon" type="image/x-icon" href="/images/logo.jpg">
     <!-- ------------------------------------ -->
-
-    <!-- ------------------Fonts------------------- -->
+    <!------------------------------------->
+    <!-- Icons Script -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!------------------------------------->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
-    <!-- ------------------------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@900&display=swap" rel="stylesheet">
+    <!------------------------------------->
 
-    <!-- -------------------------------Icons Script--------------------------------- -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <!-- ---------------------------------------------------------------- -->
     <title>Projects</title>
+
+
 </head>
 <body>
-  <nav>
-    <div class="transition-nav">
-      <a href="/pages/domain.html" title="Domain"><ion-icon name="at-outline"></ion-icon></a>
-      <a href="/pages/join.html"><ion-icon name="add-outline"></ion-icon></a>
-      <a href="/pages/hosting.html" title="Github"><ion-icon name="flash-outline"></ion-icon></a>
+  <div class="nav index-nav main-nav" id="nav">
+    <div class="center-nav">
+        <a href="/" class="nav home-link nav-links " title="Home"><ion-icon name="home"></ion-icon></a>
+        <a href="/pages/store.html" class="nav store-link nav-links" title="Store"><ion-icon name="cart"></ion-icon></a>
+        <a href="/pages/projects.html" class="nav projects-link nav-links active" title="Projects"><ion-icon name="folder"></ion-icon></a>
     </div>
-
-    <div class="mid-nav">
-      <a href="/" class="active" title="HOME"><ion-icon name="home"></ion-icon></ion-icon></a>
-      <a href="/pages/projects.html" title="Projects"><ion-icon name="code-slash"></ion-icon></ion-icon></a>
+    <div class="pro-link">
+      <a href="/pages/pro.html" class="pro-link-text">Pro</a>
     </div>
-      
-    <div  class="transition-nav">
-      <a href="https://anuragcode.com/github"><ion-icon name="logo-github"></ion-icon></a>
-      <a href="https://anuragcode.com/instagram"><ion-icon name="logo-instagram"></ion-icon></ion-icon></a>
-      <a href="https://anuragcode.com/discord"><ion-icon name="logo-discord"></ion-icon></a>
+    <div class="nav-right">
+        <a href="/pages/api.html" class="nav api-link nav-links" title="API"><ion-icon name="laptop-outline"></ion-icon></a>
+            <a href="/pages/hosting.html" class="nav hosting-link nav-links" title="Hosting"><ion-icon name="flash"></ion-icon></a>
+        <a href="/pages/domain.html" class="nav domain-link nav-links" title="Domain"><ion-icon name="planet"></ion-icon></a>
     </div>
-  </nav>
-    
-<!-- ------------------------------Projects----------------------------------------- -->
-<main class="main">
-  <div class="container">
-    <div class="typed-out"><h1 class="main-title">Projects</h1></div>
   </div>
-</main>
-
-<hr id="divide-main-section">
-<section class="main-projectcontent">
-  <a href="https://github.com/AnuragCodeCom/Encryption-Module" target="_blank">
-    <div>
-      
-        <h2>18th May 2023</h2>
-        <h2>Encrypt/Dencrypt Tool</h2>
-      
-        <p>A Encryption/Dencryption Tool in Python</p>
-        <p>Free To Use/<b></b>Open Source</b></p>
-        <ion-icon name="logo-github" class="icon"></ion-icon>
-      
-    </div>
-  </a>
-
-  <a href="https://github.com/AnuragCodeCom/Age-Verifier-With-DOB-In-Python" target="_blank">
-    <div>
-      
-        <h2>20th April 2023</h2>
-        <h2>Age Verifier With DOB</h2>
-      
-        <p>Age Verifier Using Input DOB In Python</p>
-        <p>Free To Use/<b></b>Open Source</b></p>
-        <ion-icon name="logo-github" class="icon"></ion-icon>
-      
-    </div>
-  </a>
-    <a href="https://github.com/AnuragCodeCom/AnuragCodeCom-Main-Website" target="_blank">
-      <div>
+    <main class="main main-title-div" id="main">
+        <div class="container main-title-container">
+          <div class="typed-out"><h1 class="main-title">AnuragCode.Com</h1></div>
+          <div class="typed-out"><h1 class="second-title projects-title">Projects</h1></div>
+        </div>
+    </main>
+        <hr class="main-content-divider">
         
-          <h2>20th March 2023</h2>
-          <h2>Main Website Project</h2>
-        
-          <p>Main Website Code for This Website</p>
-          <p>Free To Use</p>
-          <ion-icon name="logo-github" class="icon"></ion-icon>
-        
-      </div>
-    </a>
-    
-  </section>
-  
-<!-- ----------------------------------------------------------------------- -->
-    <footer>
-        <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
-
-            <div class="footer-newsletter">
-              <div class="container">
+        <section class="main-projectcontent">
+            <a>
+              <div class="premium">
+                
+                  <h2>18th May 2023</h2>
+                  <h2>Encrypt/Dencrypt Tool</h2>
+                
+                  <p>A Encryption/Dencryption Tool in Python</p>
+                  <p>Premium Only/<b></b>Closed Source</b></p>
+                  <ion-icon name="star"></ion-icon>
+                  <p>Buy Pro To Access</p>
+                
+              </div>
+            </a>
+          
+            <a href="https://github.com/AnuragCodeCom/Age-Verifier-With-DOB-In-Python" target="_blank">
+              <div>
+                
+                  <h2>20th April 2023</h2>
+                  <h2>Age Verifier With DOB</h2>
+                
+                  <p>Age Verifier Using Input DOB In Python</p>
+                  <p>Free To Use/<b></b>Open Source</b></p>
+                  <ion-icon name="logo-github" class="icon footer github-link footer-links"></ion-icon> <br>
+                
+              </div>
+            </a>
+              <a href="https://github.com/AnuragCodeCom/AnuragCodeCom-Main-Website" target="_blank">
+                <div>
+                  
+                    <h2>20th March 2023</h2>
+                    <h2>Main Website Project</h2>
+                  
+                    <p>Main Website Code for This Website</p>
+                    <p>Free To Use</p>
+                    <ion-icon name="logo-github" class="footer github-link footer-links icon"></ion-icon>
+                  
                 </div>
-              </div>
-            </div>
-
+              </a>
+              
+            </section>
             
-            <div class="container">
-              <div class="copyright">
-                <span style="display:flex; justify-content: center; align-items: center;"><ion-icon name="mail-outline" style="font-size: 26px; padding: 2px;"></ion-icon>Email Us At: anuragcodecom@gmail.com </span><br>
-                <span style="display:flex; justify-content: center; align-items: center;"><ion-icon name="bug-outline" style="font-size: 26px; padding: 2px;"></ion-icon>Report Bugs At: bug.anuragcodecom@gmail.com </span><br>
-
-                Copyright <strong><span>AnuragCodeCom</span></strong>. All Rights Reserved
-              </div>
-              <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you purchased the pro version. -->
-                <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
-                Designed by <a>Anurag</a>
-              </div>
+        <hr class="main-content-divider">
+          <footer>
+            <div class="footer-usefull-links">
+                <p> <b>Find An Issue With This Page?</b> <br>
+                Report Us At:  bug.anuragcodecom@gmail.com</p>
+                <p> <b> Need Help? </b><br>
+                Email: anuragcodecom@gmail.com</p>
+                
             </div>
-    </footer>
+            <div class="socials">
+                <a href="https://anuragcode.com/reddit" class="footer reddit-link footer-links" title="Reddit"><ion-icon name="logo-reddit"></ion-icon></a>
+                <a href="https://anuragcode.com/github" class="footer github-link footer-links" title="Github"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="https://anuragcode.com/instagram" class="footer instagram-link footer-links" title="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://anuragcode.com/discord" class="footer discord-link footer-links" title="Discord"><ion-icon name="logo-discord"></ion-icon></a>
+            </div>
+            <p> <b>Helpful Links</b> <br>
+              <a href="/" class="footer-link">  Home  </a>  |  <a href="/pages/projects.html" class="footer-link">  Projects  </a></p>
+
+
+
+<script src="scripts/main.js"></script>
 </body>
 </html>
